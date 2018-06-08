@@ -5,12 +5,33 @@ $darkGrey: #444444;
 $primaryFont: 'Montserrat', sans-serif;
 
 .background {
-    width: 100vw;
-    height: 700px;
-    background-color: $darkGrey;
-    transform: skewY(-10deg);
+  width: 100vw;
+  height: 700px;
+  background-color: $darkGrey;
+  transform: skewY(-10deg);
+  margin-top: -17rem;
+  padding-top: 17rem;
+  border-bottom: 1rem solid $bottegaGreen;
 }
 
 .background > * {
-    transform: skewY(10deg);
+  transform: skewY(10deg);
+}
+
+.the-headers {
+  text-align: center;
+  padding-top: 46px;
+  font-family: $primaryFont;
+}
+
+.header {
+  margin: 20px;
+  color: white;
+  font-weight: 700;
+}
+
+.sub-header {
+  margin-bottom: 46px;
+  color: rgba(255, 255, 255, 0.749);
+  font-size: 15px;
 }
