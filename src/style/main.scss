@@ -18,16 +18,13 @@ $primaryFont: 'Montserrat', sans-serif;
   transform: skewY(10deg);
 }
 
-.the-headers {
-  text-align: center;
-  padding-top: 46px;
-  font-family: $primaryFont;
-}
-
 .header {
+  text-align: center;
   margin: 20px;
+  padding-top: 46px;
   color: white;
   font-weight: 700;
+  font-family: $primaryFont;
 }
 
 .sub-header {

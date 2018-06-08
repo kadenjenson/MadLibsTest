@@ -5,10 +5,8 @@ export default class App extends Component {
     return (
       <div>
         <div className="background">
-          <div className="the-headers">
-            <div className="header">
-              <h1>MadLibs</h1>
-            </div>
+          <div className="header">
+            <h1>MadLibs</h1>
             <div className="sub-header">
               Fill out the fields below and click the generate button to see your Mad Lib.
             </div>
