@@ -1,0 +1,16 @@
+$bottegaGreen: #00CB79;
+$clearBlue: #45B0E5;
+$mainGrey: #CFCFCF;
+$darkGrey: #444444;
+$primaryFont: 'Montserrat', sans-serif;
+
+.background {
+    width: 100vw;
+    height: 700px;
+    background-color: $darkGrey;
+    transform: skewY(-10deg);
+}
+
+.background > * {
+    transform: skewY(10deg);
+}
