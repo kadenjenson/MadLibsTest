@@ -4,3 +4,14 @@ $mainGrey: #CFCFCF;
 $darkGrey: #444444;
 $primaryFont: 'Montserrat', sans-serif;
 
+.home {
+  background-color: $darkGrey;
+}
+
+.card {
+  height: 740px;
+  width: 1250px;
+  background-color: $mainGrey;
+  box-shadow: 0 4px 30px 0 rgba(0,0,0, .50);
+  border-radius: 8px;
+}
