@@ -4,6 +4,17 @@ $mainGrey: #CFCFCF;
 $darkGrey: #444444;
 $primaryFont: 'Montserrat', sans-serif;
 
+*,
+*:before,
+*:after {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
 .home {
   background-color: $darkGrey;
 }
