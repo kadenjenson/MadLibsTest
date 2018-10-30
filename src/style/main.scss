@@ -18,6 +18,12 @@ body {
 .home {
   display: grid;
   justify-items: center;
+
+  grid-template-rows: [header-s] 210px [header-e card-s] 995px [card-e];
+}
+
+.header {
+  align-self: center;
 }
 
 .card {
@@ -41,4 +47,19 @@ body {
 
 .input {
   display: grid;
+  grid-template-columns: [num-s] 26px [num-e input-s] 1fr [input-e];
+
+  &__number {
+    grid-column: num-s/num-e;
+  }
+
+  input {
+    grid-column: input-s/input-e;
+  }
+
+  &__title {
+    grid-column: input-s/input-e;
+    margin-top: 8px;
+    text-align: center;
+  }
 }
