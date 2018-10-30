@@ -1,7 +1,7 @@
 $bottegaGreen: #00CB79;
 $clearBlue: #45B0E5;
 $mainGrey: #CFCFCF;
-$darkGrey: #3b3b3b;
+$darkGrey: #444444;
 $primaryFont: 'Montserrat', sans-serif;
 
 *,
@@ -24,6 +24,15 @@ body {
 
 .header {
   align-self: center;
+  &__skew {
+    z-index: -1;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 495px;
+    width: 100%;
+    background-color: $darkGrey;
+  }
 }
 
 .card {
