@@ -16,22 +16,27 @@ body {
 }
 
 .home {
+  position: relative;
+
   display: grid;
   justify-items: center;
-
   grid-template-rows: [header-s] 210px [header-e card-s] 995px [card-e];
 }
 
 .header {
   align-self: center;
+  color: white;
   &__skew {
-    z-index: -1;
+    transform: skewY(-10deg);
+    z-index: -10;
     top: 0;
     left: 0;
     position: absolute;
-    height: 495px;
+    height: 600px;
     width: 100%;
+    margin-top: -150px;
     background-color: $darkGrey;
+    border-bottom: 15px solid $bottegaGreen;
   }
 }
 
