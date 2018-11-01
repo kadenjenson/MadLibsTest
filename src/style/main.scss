@@ -3,6 +3,18 @@ $clearBlue: #45B0E5;
 $mainGrey: rgb(114, 114, 114);
 $primaryFont: 'Montserrat', sans-serif;
 
+@mixin button {
+  height: 50px;
+  width: 300px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+  color: white;
+  font-family: "Montserrat";
+  font-size: 22px;
+  text-align: center;
+  @content;
+}
+
 *,
 *:before,
 *:after {
@@ -26,7 +38,7 @@ body {
   align-self: center;
   color: white;
   text-align: center;
-  font-family: Montserrat;
+  font-family: "Montserrat";
 
   &__skew {
     transform: skewY(-10deg);
@@ -54,10 +66,10 @@ body {
 }
 
 .card {
-  font-family: Montserrat;
+  font-family: "Montserrat";
   height: 740px;
   width: 1250px;
-  box-shadow: 0 4px 30px 0 rgba(0,0,0, .50);
+  box-shadow: 0 4px 30px 0 rgba(0,0,0,.50);
   background-color: white;
   border-radius: 8px;
 
@@ -70,6 +82,26 @@ body {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
     align-items: center;
+  }
+
+  button {
+    justify-self: center;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__generate {
+    @include button() {
+      background-color: $bottegaGreen;
+    }
+  }
+
+  &__clear {
+    @include button() {
+      background-color: $clearBlue;
+    }
   }
 }
 
