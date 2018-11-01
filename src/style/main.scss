@@ -76,7 +76,7 @@ body {
 .input {
   display: grid;
   grid-template-columns: [num-s] 26px [num-e input-s] 1fr [input-e];
-  grid-gap: 10px;
+  grid-gap: 8px;
 
   text-align: center;
 
@@ -100,18 +100,17 @@ body {
     font-size: 15px;
     font-weight: 600;
     border: none;
+    border-bottom: 1px solid #b3b3b3;
     width: 190px;
 
     &:focus {
       outline: none;
+      border-bottom: 2px solid $bottegaGreen;
     }
   }
 
   &__title {
     grid-column: input-s/input-e;
-
-    padding-top: 5px;
-    border-top: 1px solid #b3b3b3;
     font-size: 13px;
   }
 }
